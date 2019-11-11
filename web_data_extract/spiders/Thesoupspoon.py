@@ -1,6 +1,5 @@
 import scrapy
 
-
 class ThesoupspoonSpider(scrapy.Spider):
     name = 'Thesoupspoon'
     allowed_domains = ["stackoverflow.com/"]
@@ -11,4 +10,3 @@ class ThesoupspoonSpider(scrapy.Spider):
 
         for i in titles:
             print(i)
-
