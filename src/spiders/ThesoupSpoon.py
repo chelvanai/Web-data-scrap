@@ -1,6 +1,6 @@
 import scrapy
 
-
+#rer
 class ThesoupspoonSpider(scrapy.Spider):
     name = 'ThesoupSpoon'
     allowed_domains = ['http://www.thesoupspoon.com']
