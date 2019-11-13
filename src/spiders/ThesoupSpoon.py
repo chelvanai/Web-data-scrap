@@ -1,10 +1,11 @@
 import scrapy
 
-#rer
+
 class ThesoupspoonSpider(scrapy.Spider):
     name = 'ThesoupSpoon'
-    allowed_domains = ['http://www.thesoupspoon.com']
-    start_urls = ['http://http://www.thesoupspoon.com/']
+    allowed_domains = ['www.thesoupspoon.com']
+    start_urls = ['http://www.thesoupspoon.com/']
 
     def parse(self, response):
-        pass
+        link = response.css('a::attr(href)').extract()
+        print(link)
